@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #C0C0C0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 280px; /* Adjusted width for better resemblance */
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    display: flex;
+    justify-content: space-between; /* Aligns input and AC button separately */
+    background-color: #ffffff;
+    
+}
+
+.result-display {
+    flex: 3; /* Larger portion for display */
+    padding: 15px;
+    font-size: 22px; /* Adjusted font size */
+    text-align: left; /* Align text to the left */
+    border: none;
+    width: 180px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.ac-button {
+    flex: 1; /* Smaller width for AC button */
+    background-color: #009688;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    width: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ac-button:hover {
+    background-color: #00796b;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #424242;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000; /* Darker color for number buttons */
+    color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1c1c1c;
+}
+
+button.operator {
+    background-color: #616161; /* Lighter shade for operator buttons */
+}
+
+button.operator:hover {
+    background-color: #757575;
+}
+
